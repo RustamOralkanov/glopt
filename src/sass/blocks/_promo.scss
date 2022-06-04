@@ -1,0 +1,157 @@
+.promo {
+    min-height: 680px;
+    padding: 23px 0 80px 0;
+    background: url('../img/main_bg.jpg') center (center/cover) no-repeat;
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        .logo {
+            width: 100px;
+            img {
+                width: 100%;
+            }
+        }
+        .request {
+            display: flex;
+            align-items: center;
+            &__phone {
+                text-align: right;
+                font-size: 14px;
+                line-height: 24px;
+                font-weight: 300;
+                color: var(--first-color);
+                margin-right: 20px;
+                a {
+                    font-size: 19px;
+                    font-weight: 700;
+                    color: var(--first-color);
+                    margin-right: 0;
+                    transition: all 0.8s;
+                    &:hover {
+                        color: var(--main-color);
+                    }
+                }
+            }
+        }
+        .nav {
+            height: 45px;
+            display: flex;
+            align-items: center;
+            .menu {
+                display: flex;
+                list-style-type: none;
+                margin-bottom: 0;
+                &__item {
+                    padding: 0 13px;
+                    border-right: solid rgba(256 , 256, 256, .4 );
+                    &:last-child {
+                        border: none;
+                    }
+                }
+                &__link {
+                    color: var(--first-color);
+                    font-size: 15px;
+                    line-height: 16px;
+                    font-weight: 400;
+                    transition: all 0.8s;
+                    text-decoration: none;
+                    padding-bottom: 5px;
+                    &:hover {
+                        color: var(--main-color);
+                        border-bottom: solid var(--main-color);
+                    }
+                }
+            }
+        }
+    }
+    &__text {
+        margin-top: 10px;
+        text-align: center;
+        font-size: 24px;
+        line-height: 1.2;
+        font-weight: 300;
+        color: var(--first-color);
+    }
+    &__header {
+        margin-top: 25px;
+        text-align: center;
+        font-size: 72px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: var(--main-color);
+    }
+    &__subheader {
+        margin-top: 10px;
+        text-align: center;
+        font-size: 42px;
+        line-height: 1.2;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+    &__circle {
+        margin: 0 auto;
+        margin-top: 38px;
+        width: 10px;
+        height: 10px;
+        background-color: var(--first-color);
+        border-radius: 100%;
+        position: relative;
+        &:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 24px;
+            height: 2px;
+            width: 450px;
+            background-color: var(--first-color);
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 24px;
+            height: 2px;
+            width: 450px;
+            background-color: var(--first-color);
+        }
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 260px);
+        column-gap: 30px;
+        margin-top: 27px;
+    }
+    &__item {
+        &-img {
+            display: block;
+            margin: 0 auto;
+        }
+        &-descr {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 16px;
+            line-height: 22px;
+            font-weight: 300;
+            color: var(--first-color);
+        }
+    }
+    &__btn {
+        margin-top: 39px;
+        display: flex;
+        justify-content: center;
+       &-center {
+            font-family: Roboto;
+            font-size: 15px;
+            line-height: 17px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--first-color);
+       }
+    }
+}
