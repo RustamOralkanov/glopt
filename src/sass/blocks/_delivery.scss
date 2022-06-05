@@ -1,0 +1,32 @@
+.delivery {
+    padding: 51px 0 57px 0;
+    &__wrapper {
+        margin-top: 37px;
+        display: grid;
+        grid-template-columns: repeat(3, 360px);
+        grid-auto-rows: auto;
+        column-gap: 30px;
+    }
+    &__item {
+        &-img {
+            width: 360px;
+            height: 210px;
+            object-fit: contain;
+        }
+        &-text {
+            margin-top: 28px;
+            text-align: center;
+            font-size: 18px;
+            line-height: 22px;
+            font-weight: 700;
+            color: var(--main-color);
+        }
+        &-descr {
+            margin-top: 5px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 300;
+            color: var(--second-color);
+        }
+    }
+}

@@ -15,7 +15,15 @@
     margin: 0 auto;
 }
 
+.divider {
+    margin: 20px auto;
+    width: 148px;
+    height: 1px;
+    background-color: var(--main-color);
+}
+
 @import 'blocks/promo';
 @import 'blocks/buttons';
 @import 'blocks/titles';
 @import 'blocks/prons';
+@import 'blocks/delivery';
