@@ -1,0 +1,51 @@
+.reviews {
+    padding: 50px 0 65px 0;
+    &__carousel {
+        position: relative;
+        width: 600px;
+        margin: 0 auto;
+        margin-top: 31px;
+       
+    }
+    &__inner {
+        width: 300px;
+        margin: 0 auto;
+        &-img {
+            width: 114px;
+            height: 114px;
+            margin: 0 auto;
+        }
+        &-name {
+            margin-top: 19px;
+            text-align: center;
+            font-size: 18px;
+            line-height: 22px;
+            font-weight: 700;
+            color: var(--second-color);
+        }
+    }
+    &__item {
+        &-text {
+            margin-top: 10px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 300;
+        }
+    }
+    .slick-prev, .slick-next {
+        position: absolute;
+        top: 40%;
+        transform: translateY(-50%);
+        left: 0px;
+        border: none;
+        background-color: #fff;
+        img {
+            width: 14px;
+            height: 46px;
+        }
+    }
+    .slick-next {
+        right: 0px;
+        left: auto;
+    }
+}

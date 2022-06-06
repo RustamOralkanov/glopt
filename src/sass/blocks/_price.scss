@@ -17,11 +17,11 @@
             background-color: #25333c;
             color: var(--first-color);
             font-size: 16px;
-            line-height: 23px;
             font-weight: 700;
             text-transform: uppercase;
-            text-align: center;
-            padding: 18px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         &-body {
             padding: 14px 16px 0 16px;

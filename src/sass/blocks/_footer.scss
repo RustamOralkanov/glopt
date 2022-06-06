@@ -1,0 +1,60 @@
+.footer {
+    padding: 24px 0 39px 0;
+    min-height: 200px;
+    background-color: #25333c;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        display: flex;
+        align-items: center;
+        img {
+            margin-right: 48px;
+            width: 68px;
+            height: 71px;
+        }
+    }
+    &__text {
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--first-color);
+    }
+    &__call {
+        display: flex;
+        align-items: center;
+    }
+    &__phone {
+        text-align: right;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 300;
+        color: var(--first-color);
+        margin-right: 20px;
+        a {
+            font-size: 19px;
+            font-weight: 700;
+            color: var(--first-color);
+            margin-right: 0;
+            transition: all 0.8s;
+            &:hover {
+                color: var(--main-color);
+            }
+        }
+    }
+    hr {
+        margin-top: 33px;
+        opacity: 0.3;
+    }
+    &__info {
+        color: var(--first-color);
+        opacity: 0.6;
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-between;
+        a {
+            color: var(--main-color);
+        }
+    }
+}
