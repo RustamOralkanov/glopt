@@ -43,6 +43,9 @@
             }
         }
     }
+    &__btn-mobile {
+        display: none;
+    }
     hr {
         margin-top: 33px;
         opacity: 0.3;
@@ -57,4 +60,5 @@
             color: var(--main-color);
         }
     }
+    
 }
